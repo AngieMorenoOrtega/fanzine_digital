@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Variables de lo Cotidiano</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="fanzine">
+    <div class="page" id="page0">
+      <h1>{{ fanzine.title | default: "Variables de lo cotidiano" }}</h1>
+      <p>Un fanzine poético interactivo basado en código Liquid.</p>
+    </div>
+    <div class="page" id="page1">
+      <p>{% assign nombre = "usuario" %}</p>
+      <p>{% if nombre %}Hola, {{ nombre | capitalize }}.{% else %}Usuario anónimo{% endif %}</p>
+    </div>
+    <div class="page" id="page2">
+      <p>{% for día in semana %} Repetición: {{ día }} {% endfor %}</p>
+    </div>
+    <div class="page" id="page3">
+      <p>{% capture deseo %}pertenecer{% endcapture %}</p>
+      <p>{{ deseo | upcase }}</p>
+    </div>
+    <div class="page" id="page4">
+      <p>Error 404: {% include "sentido" %}</p>
+    </div>
+    <div class="page" id="page5">
+      <p>Completa tu código:</p>
+      <input type="text" id="inputName" placeholder="Tu nombre...">
+      <button onclick="renderInput()">Mostrar</button>
+      <div id="output"></div>
+    </div>
+  </div>
+  <div class="navigation">
+    <button onclick="prevPage()">Anterior</button>
+    <button onclick="nextPage()">Siguiente</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
