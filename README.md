@@ -2,7 +2,7 @@
 
 **Variables de lo Cotidiano** es un fanzine poético interactivo creado para la web. Utiliza conceptos del lenguaje de plantillas Liquid (usado en Jekyll y Shopify) para explorar la rutina, la identidad y la repetición a través de navegación y código.
 
-![Captura de pantalla del fanzine](https://i.ibb.co/XYZ123/fanzine-preview.png)
+![Captura de pantalla del fanzine](https://i.ibb.co/XYZ123/fanzine-preview.png](https://i.ibb.co/ynwm39Wd/Captura-de-pantalla-2025-05-05-161408.png)
 
 ---
 
